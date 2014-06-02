@@ -1,0 +1,86 @@
+@import compass/css3/shared
+
+$animation-support: not -moz, -webkit, not -o, not -ms, not -khtml
+
+// CSS Animations
+// Including this submodule sets following defaults for the mixins:
+//
+//     $default-animation-name      : none
+//     $default-animation-duration  : 1s
+//     $default-animation-function  : false
+//     $default-animation-delay     : false
+//     $default-animation-fill-mode : false
+//
+// Override them if you like. Timing-function and delay are set to false for browser defaults (ease, 0s).
+
+$default-animation-name: none !default
+
+$default-animation-duration: 1s !default
+
+$default-animation-function: false !default
+
+$default-animation-delay: false !default
+
+$default-animation-fill-mode: none !default
+
+// One or more name to animation
+//
+// * for multiple, use a comma-delimited list
+// * also accepts "all" or "none"
+
+=animation-name($names: $default-animation-name)
+  +experimental(animation-name, unquote($names), $animation-support...)
+
+// One or more durations in seconds
+//
+// * for multiple, use a comma-delimited list
+// * these durations will affect the properties in the same list position
+
+=animation-duration($duration: $default-animation-duration)
+  @if type-of($duration) == string
+    $duration: unquote($duration)
+  +experimental(animation-duration, $duration, $animation-support...)
+
+// One or more timing functions
+//
+// * [ ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(x1, y1, x2, y2)]
+// * For multiple, use a comma-delimited list
+// * These functions will effect the properties in the same list position
+
+=animation-timing-function($function: $default-animation-function)
+  +experimental(animation-timing-function, unquote($function), $animation-support...)
+
+// One or more animation-delays in seconds
+//
+// * for multiple, use a comma-delimited list
+// * these delays will effect the properties in the same list position
+
+=animation-delay($delay: $default-animation-delay)
+  @if type-of($delay) == string
+    $delay: unquote($delay)
+  +experimental(animation-delay, $delay, $animation-support...)
+
+// One or more fill mode
+//
+// * [none | forwards | backwards | both]
+// * For multiple, use a comma-delimited list
+
+=animation-fill-mode($fill-mode: $default-animation-fill-mode)
+  +experimental(animation-fill-mode, unquote($fill-mode), $animation-support...)
+
+// animation all-in-one shorthand
+
+=single-animation($name: $default-animation-name, $duration: $default-animation-duration, $function: $default-animation-function, $delay: $default-animation-delay)
+  +animation-name($name)
+  +animation-duration($duration)
+  @if $function
+    +animation-timing-function($function)
+  @if $delay
+    +animation-delay($delay)
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+
+  @keyframes #{$name}
+    @content
