@@ -1,0 +1,14 @@
+# OSX
+.DS_Store
+Thumbs.db
+
+# Bundler
+Gemfile.lock
+
+# Sass
+.sass-cache
+
+# Other
+*.codekit
+*.sublime-project
+*.sublime-workspace

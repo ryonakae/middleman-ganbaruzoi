@@ -1,0 +1,52 @@
+doctype html
+html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fbml"
+  head
+    meta charset="utf-8"
+
+    title == data.page.title
+
+    meta name="description" content="#{data.page.description}"
+    meta name="robots" content="index,follow"
+    meta name="viewport" content="width=device-width, maximum-scale=1.0"
+
+    / OGP
+    meta property="fb:admins" content="#"
+    meta property="fb:app_id" content="#"
+    meta property="og:url" content="#"
+    meta property="og:type" content="website"
+    meta property="og:title" content="#"
+    meta property="og:locale" content="ja_JP"
+    meta property="og:image" content="#"
+    meta property="og:description" content="#"
+    meta property="og:site_name" content="#"
+    meta property="article:publisher" content="#"
+
+    / Twitter Meta
+    meta name="twitter:site" value="@#"
+    meta name="twitter:creator" value="@#"
+    meta name="twitter:url" value="#"
+    meta name="twitter:card" value="summary_large_image"
+    meta name="twitter:title" value="#"
+    meta name="twitter:image" value="#"
+    meta name="twitter:description" value="#"
+
+    == favicon_tag "favicon.ico"
+    == favicon_tag "apple-touch-icon.png", :rel => "apple-touch-icon-precomposed"
+    == stylesheet_link_tag "style"
+
+    /[if lt IE 9]
+      script src="//html5shiv.googlecode.com/svn/trunk/html5.js"
+      script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"
+      script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"
+
+    == javascript_include_tag  "all"
+
+  body class="#{page_classes}"
+    / header
+    == partial 'layouts/header'
+
+    / main
+    == yield
+
+    / footer
+    == partial 'layouts/footer'
