@@ -1,6 +1,6 @@
 # Boilerplate of Middleman.
 
-<img src="http://f.cl.ly/items/00201Z12410h1W2N0r2j/%E5%86%99%E7%9C%9F%202014-06-07%2022%2011%2032_1.png" width="350" alt="今日も一日がんばるぞい！">
+<img src="http://f.cl.ly/items/00201Z12410h1W2N0r2j/%E5%86%99%E7%9C%9F%202014-06-07%2022%2011%2032_1.png" width="450" alt="今日も一日がんばるぞい！">
 
 ## Ready:
 
