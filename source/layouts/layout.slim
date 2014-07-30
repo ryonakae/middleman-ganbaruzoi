@@ -6,8 +6,9 @@ html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fb
     title == data.page.title
 
     meta name="description" content="#{data.page.description}"
+    meta name="keywords" content="#{data.page.keywords}"
     meta name="robots" content="index,follow"
-    meta name="viewport" content="width=device-width, maximum-scale=1.0"
+    meta name="viewport" content="width=device-width"
 
     / OGP
     meta property="fb:admins" content="#"
@@ -30,9 +31,13 @@ html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fb
     meta name="twitter:image" value="#"
     meta name="twitter:description" value="#"
 
+    / Author
+    link rel="author" href="https://plus.google.com/(Google+ ID)"
+
+    == stylesheet_link_tag "style"
     == favicon_tag "favicon.ico"
     == favicon_tag "apple-touch-icon.png", :rel => "apple-touch-icon-precomposed"
-    == stylesheet_link_tag "style"
+    link rel="canonical" href=""
 
     /[if lt IE 9]
       script src="//html5shiv.googlecode.com/svn/trunk/html5.js"

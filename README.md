@@ -5,7 +5,7 @@
 ## Ready:
 
 * Slim
-* Sass(SASS)
+* Sass(SASS) + Compass
 * CoffeeScript
 * LiveReload
 

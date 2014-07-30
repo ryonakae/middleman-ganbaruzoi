@@ -1,26 +1,102 @@
 @charset "utf-8"
 
-// Compass Import
+// Import Compass
 @import compass
 
-// Reset or Normalize
-// parameter: compass/reset / option/_normalize
-// @import compass/reset
-@import option/_normalize
 
-// Other Options
-// @import option/_iconfont
-// @import option/_animation
-
-// Site Setting, Mixin, Base
-@import _site-setting
+/* Import Sass */
+@import _normalize
 @import _mixin
-@import _base
+@import _variable
+@import _grid
 
-// Layout
-@import layout/_l-header
-@import layout/_l-main
-@import layout/_l-footer
 
-// Module
-// @import module/_module-name
+/* Common Style */
+*
+  +box-sizing(border-box)
+
+
+// body
+body
+  font-family: $fontFamily
+  background-color: $bgColor
+  color: $fontColor-base
+  line-height: 1.8
+
+  // selection
+    ::selection
+      background: $selectionColor
+      color: #fff
+
+
+// Link
+a
+  color: $fontColor-link
+  cursor: pointer
+  text-decoration: none
+
+  &, img
+    @extend %animation
+
+  &:hover
+    color: $fontColor-hover
+
+    img
+      opacity: 0.7
+
+
+// Heading
+h1, h2, h3, h4, h5, h6
+  line-height: 1.4
+
+  a
+    color: $fontColor-base
+
+
+// hr
+hr
+  border: none
+  height: 1px
+  background-color: $borderColor
+
+
+// Text Align
+  .align-center
+    text-align: center
+
+  .align-left
+    text-align: right
+
+
+// Float
+  .float-left
+    float: left
+
+  .float-right
+    float: right
+
+
+// Margin, Padding (em)
+  @for $i from 0 through 20
+    // margin-top
+    .mt#{$i * 5}em
+      margin-top: ($i * 5 / 10) + em
+
+    // margin-bottom
+    .mb#{$i * 5}em
+      margin-bottom: ($i * 5 / 10) + em
+
+    // padding-top
+    .pt#{$i * 5}em
+      padding-top: ($i * 5 / 10) + em
+
+    // padding-bottom
+    .pb#{$i * 5}em
+      padding-bottom: ($i * 5 / 10) + em
+
+
+/* End Common Style */
+
+
+// Media Queries
+@import _media-queries

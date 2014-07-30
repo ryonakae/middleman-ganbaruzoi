@@ -1,10 +1,51 @@
 ---
 layout: layout
-title: Welcome to Middleman
-description: Description Here
+title: Site title
+description: Site description
+keywords: Site keywords
 ---
 
 .l-main
-  h1 Middleman is Watching
-  p
-    == link_to "Read Online Documentation", "http://middlemanapp.com/"
+  article.l-container
+    h1 Main
+    p
+      | Main Contents
+
+    p
+      |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet illum sequi, optio expedita hic debitis itaque vero praesentium magni facilis. Quis nisi neque quos nulla adipisci dolore quo ipsa voluptatum.
+
+    hr
+
+    h2 Template Helper
+
+    h3 Link Helper
+    p
+      == link_to "Link", "#"
+
+    h4 Link Block
+    == link_to 'http://middlemanapp.com/jp/' do
+      h5 Block Title
+      p Block Text
+
+    h3 Image Helper
+    p
+      == image_tag "image.png", :alt => ""
+
+    h4 Link Image
+    p
+      == link_to "#{image_tag "image.png", :alt => ""}", "#"
+
+    h3 More Documentation
+    p
+      == link_to "Middleman Website", "http://middlemanapp.com/jp/", :target => "_blank"
+
+    hr
+
+    h2 Grid System
+    .l-row
+      p.l-grid-4
+        |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quis molestiae maiores architecto a odit deleniti porro eius, placeat quaerat unde consequatur non voluptas ut, hic nostrum cum sed, expedita.
+      p.l-grid-4
+        |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quis molestiae maiores architecto a odit deleniti porro eius, placeat quaerat unde consequatur non voluptas ut, hic nostrum cum sed, expedita.
+      p.l-grid-4
+        |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quis molestiae maiores architecto a odit deleniti porro eius, placeat quaerat unde consequatur non voluptas ut, hic nostrum cum sed, expedita.

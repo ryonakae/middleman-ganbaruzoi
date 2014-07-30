@@ -1,0 +1,29 @@
+// Background Color
+$bgColor: #fff
+
+
+// Text Color
+$fontColor-base: #333
+$fontColor-sub: #b3b3b3
+
+
+// Link
+$fontColor-link: #1cc1da
+$fontColor-hover: darken($fontColor-link, 10%)
+
+
+// Border Color
+$borderColor: #d9d9d9
+$selectionColor: #333
+
+
+// Font Family
+// Web Font
+  $fontName: "Font Name"
+  $fontDir: "font_name"
+  $fontFileName: "font_name"
+  +font-face("#{$fontName}", font-files("#{$fontDir}/#{$fontFileName}.woff", "#{$fontDir}/#{$fontFileName}.ttf"), "#{$fontDir}/#{$fontFileName}.eot", normal, normal)
+  $fontFileName: "font_name"
+  +font-face("#{$fontName}", font-files("#{$fontDir}/#{$fontFileName}.woff", "#{$fontDir}/#{$fontFileName}.ttf"), "#{$fontDir}/#{$fontFileName}.eot", bold, italic)
+
+$fontFamily: "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif

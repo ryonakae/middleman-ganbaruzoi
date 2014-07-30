@@ -1,0 +1,53 @@
+$gridMargin: 15px
+
+.l-container
+  width: 960px
+  margin-right: auto
+  margin-left: auto
+  overflow: hidden
+
+.l-row
+  +clearFix
+  margin-right: $gridMargin * -1
+  margin-left: $gridMargin * -1
+  +box-sizing(content-box)
+
+[class*="l-grid-"]
+  float: left
+  padding-right: $gridMargin
+  padding-left: $gridMargin
+  min-height: 1px
+
+@for $i from 1 through 12
+  .l-grid-#{$i}
+    width: (100% / 12) * $i
+
+
+// PC Large
++mediaquery-pc-large
+  .l-container
+    width: 1180px
+
+
+// Tablet
++mediaquery-tablet
+  .l-container
+    width: 740px
+
+
+// Small Tablet
++mediaquery-tablet-small
+  .l-container
+    width: auto
+    padding-left: 4%
+    padding-right: 4%
+
+  .l-row
+    margin-right: 0
+    margin-left: 0
+
+  [class*="l-grid-"]
+    float: none
+    padding-right: 0
+    padding-left: 0
+    width: auto !important
