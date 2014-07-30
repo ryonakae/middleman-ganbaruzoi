@@ -41,6 +41,12 @@ You can change branch at `config.rb`.
 
 
 ## Change Log
+### 2014-07-30
+* ディレクトリ構造シンプルにした
+* SASSを整理+必要最低限にした
+* グリッドシステム追加した
+* Modify README.md
+
 ### 2014-06-17
 * Modify README.md
 
