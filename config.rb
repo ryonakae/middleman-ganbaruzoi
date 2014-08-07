@@ -1,7 +1,6 @@
 ###
 # Compass
 ###
-
 compass_config do |config|
   config.output_style = :expanded
   config.line_comments = false
@@ -38,6 +37,8 @@ activate :automatic_image_sizes
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+
+  activate :autoprefixer, browsers: ['last 2 version', 'ie 8', 'ie 9']
 end
 
 # Methods defined in the helpers block are available in templates
@@ -61,6 +62,8 @@ set :fonts_dir, 'font'
 
 # Build-specific configuration
 configure :build do
+  activate :autoprefixer, browsers: ['last 2 version', 'ie 8', 'ie 9']
+
   # For example, change the Compass output style for deployment
   activate :minify_css
 

@@ -6,7 +6,7 @@
     display: block
 
 // Text Replace
-=textHide
+=textReplace
   overflow: hidden
   text-indent: 100%
   white-space: nowrap
@@ -24,7 +24,7 @@
   *zoom: 1
 
 
-// Media Queries
+// Media Queries Settings
 // Retina
 =mediaquery-retina
   @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx)
@@ -94,6 +94,6 @@ $easeInOutBack: cubic-bezier(0.680, -0.550, 0.265, 1.550)
 
 // animation
 %animation
-  +transition-duration(250ms)
-  +transition-timing-function($ease)
-  +transition-property(all)
+  transition-duration: 250ms
+  transition-timing-function: $ease
+  transition-property: all

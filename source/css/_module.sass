@@ -1,0 +1,57 @@
+// Text Align
+.align-center
+  text-align: center
+
+.align-right
+  text-align: right
+
+
+// PC & SP
+.sp
+  display: none
+
+// SmartPhone
++mediaquery-smartphone
+  .pc
+    display: none
+
+  .sp
+    display: block
+
+
+// Margin, Padding (px)
+@for $i from 0 through 20
+  // margin-top
+  .mt#{$i * 5}
+    margin-top: $i * 5 + px
+
+  // margin-bottom
+  .mb#{$i * 5}
+    margin-bottom: $i * 5 + px
+
+  // padding-top
+  .pt#{$i * 5}
+    padding-top: $i * 5 + px
+
+  // padding-bottom
+  .pb#{$i * 5}
+    padding-bottom: $i * 5 + px
+
+
+// Margin, Padding (em)
+@for $i from 0 through 20
+  // margin-top
+  .mt#{$i * 5}em
+    margin-top: ($i * 5 / 10) + em
+
+  // margin-bottom
+  .mb#{$i * 5}em
+    margin-bottom: ($i * 5 / 10) + em
+
+  // padding-top
+  .pt#{$i * 5}em
+    padding-top: ($i * 5 / 10) + em
+
+  // padding-bottom
+  .pb#{$i * 5}em
+    padding-bottom: ($i * 5 / 10) + em
