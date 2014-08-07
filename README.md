@@ -47,8 +47,9 @@ You can change branch at `config.rb`.
 ### 2014-08-07
 
 * [KKE](https://github.com/ryonakae/kke)のアップデートに合わせてCompass依存しないSASSファイルの書き方にした
-  *  `style.sass`でCompassのインポートをやめた
-  * KKEで使用している変数やmixin、グリッドシステムをそのまま持ってきた
+  *  `style.sass`でCompassのImportはしてるけど、依存してない
+  * Compass使ってもいいし、必須ではないみたいな感じにした
+  * KKEで使用している変数やmixin、グリッドシステムをそのまま持ってきた  
 * JavaScriptを`body`の一番最後に移動
 * FacebookやGoogle Analytics用のJavaScriptを追加
 * `head`内のタグを整理
