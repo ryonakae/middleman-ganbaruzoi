@@ -47,6 +47,10 @@ Web Designer in Kyoto, Japan.
 
 ## Change Log
 
+### 0.0.4 (2014-08-18)
+
+* `js/lib`ディレクトリの指定間違えてたので修正
+
 ### 0.0.3 (2014-08-18)
 
 * `template.rb`の`js`ディレクトリの設定おかしかったので修正

@@ -14,7 +14,7 @@ module Middleman
         default: 'js/core',
         desc: 'The path to the javascript core files'
       class_option 'js_lib_dir',
-        default: 'js/core',
+        default: 'js/lib',
         desc: 'The path to the javascript library files'
       class_option 'images_dir',
         default: 'img',
