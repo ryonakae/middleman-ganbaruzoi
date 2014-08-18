@@ -45,6 +45,10 @@ Web Designer in Kyoto, Japan.
 
 ## Change Log
 
+### 0.0.2 (2014-08-18)
+
+* `README.md`修正したやつをrubygems.orgに反映してなかったので、もうよく分からんのでアップデートした
+
 ### 0.0.1 (2014-08-18)
 
 * RubyGem化(なのでバージョンは新たに0.0.1からスタート)
