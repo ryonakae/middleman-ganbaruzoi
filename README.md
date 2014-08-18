@@ -1,5 +1,7 @@
 # middleman-ganbaruzoi
 
+<a href="https://rubygems.org/gems/middleman-ganbaruzoi"><img src="https://badge.fury.io/rb/middleman-ganbaruzoi.png"></a>
+
 Middleman-Ganbaruzoi is a boilerplate of middleman using using Slim, Sass and CoffeeScript.
 
 <img src="http://f.cl.ly/items/00201Z12410h1W2N0r2j/%E5%86%99%E7%9C%9F%202014-06-07%2022%2011%2032_1.png" width="450" alt="今日も一日がんばるぞい！">
