@@ -22,7 +22,7 @@
 
 Move your working directory. And type command below.
 
-    $ git clone https://github.com/ryonakae/middleman-boilerplate.git
+    $ git clone https://github.com/ryonakae/middleman-ganbaruzoi.git
 
     $ bundle install
 
@@ -44,12 +44,16 @@ You can change branch at `config.rb`.
 
 ## Change Log
 
+### 2014-08-18
+
+* 名前変更
+
 ### 2014-08-07
 
-* [KKE](https://github.com/ryonakae/kke)のアップデートに合わせてCompass依存しないSASSファイルの書き方にした
+* [Erichika](https://github.com/ryonakae/kke)のアップデートに合わせてCompass依存しないSASSファイルの書き方にした
   *  `style.sass`でCompassのImportはしてるけど、依存してない
   * Compass使ってもいいし、必須ではないみたいな感じにした
-  * KKEで使用している変数やmixin、グリッドシステムをそのまま持ってきた  
+  * Erichikaで使用している変数やmixin、グリッドシステムをそのまま持ってきた  
 * JavaScriptを`body`の一番最後に移動
 * FacebookやGoogle Analytics用のJavaScriptを追加
 * `head`内のタグを整理
