@@ -1,29 +1,52 @@
-# Middleman::Ganbaruzoi
+# middleman-ganbaruzoi
 
-TODO: Write a gem description
+Middleman-Ganbaruzoi is a boilerplate of middleman using using Slim, Sass and CoffeeScript.
 
-## Installation
+<img src="http://f.cl.ly/items/00201Z12410h1W2N0r2j/%E5%86%99%E7%9C%9F%202014-06-07%2022%2011%2032_1.png" width="450" alt="今日も一日がんばるぞい！">
 
-Add this line to your application's Gemfile:
 
-    gem 'middleman-ganbaruzoi'
+## Ready:
 
-And then execute:
+* Slim
+* Sass(SASS) + Compass
+* CoffeeScript
+* CSS Autoprefixer
+* LiveReload
 
-    $ bundle
 
-Or install it yourself as:
+## Install
 
-    $ gem install middleman-ganbaruzoi
+	$ gem install middleman 
+	
+	$ gem install middleman-ganbaruzoi
+	
+	$ middleman init project_name --template ganbaruzoi
 
-## Usage
 
-TODO: Write usage instructions here
+## Run
 
-## Contributing
+	$ cd  project_name
+	
+	$ middleman server
 
-1. Fork it ( https://github.com/[my-github-username]/middleman-ganbaruzoi/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+
+## Author
+
+### RYO NAKAE
+
+Web Designer in Kyoto, Japan.
+
+* [Portfolio](http://brdr.jp)
+* [Twitter](https://twitter.com/ryo_dg)
+* [JAYPEG](https://jypg.net/ryo_dg)
+* [Dribbble](https://dribbble.com/ryo_dg)
+* [GitHub](https://github.com/ryonakae)
+
+
+## Change Log
+
+### 0.0.1 (2014-08-18)
+
+* RubyGem化(なのでバージョンは新たに0.0.1からスタート)
+* `layouts`以下のヘッダーやらのパーシャルファイルに、`_header.slim`のようにアンダースコアを先頭に追加した
+* `README.md`修正
