@@ -1,14 +1,17 @@
-# OSX
-.DS_Store
-Thumbs.db
-
-# Bundler
+*.gem
+*.rbc
+.bundle
+.config
+.yardoc
 Gemfile.lock
-
-# Sass
-.sass-cache
-
-# Other
-*.codekit
-*.sublime-project
-*.sublime-workspace
+InstalledFiles
+_yardoc
+coverage
+doc/
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
