@@ -1,6 +1,6 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-gemspec
+gem "middleman", "~><%= Middleman::VERSION %>"
 gem "middleman-autoprefixer", "~> 0.2.3"
 gem "middleman-deploy", '~> 0.3.0'
 gem "middleman-livereload", "~> 3.1.0"

@@ -39,14 +39,14 @@ html lang="ja" prefix="og: http://ogp.me/ns# fb: http://www.facebook.com/2008/fb
 
   body class="#{page_classes}"
     / header
-    == partial 'layouts/header'
+    == partial 'layouts/_header'
 
     / main
     == yield
 
     / footer
-    == partial 'layouts/footer'
+    == partial 'layouts/_footer'
 
     / script
     == javascript_include_tag  "all"
-    == partial 'layouts/script'
+    == partial 'layouts/_script'

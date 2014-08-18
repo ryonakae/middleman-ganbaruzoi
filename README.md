@@ -1,84 +1,29 @@
-# Boilerplate of Middleman.
+# Middleman::Ganbaruzoi
 
-<img src="http://f.cl.ly/items/00201Z12410h1W2N0r2j/%E5%86%99%E7%9C%9F%202014-06-07%2022%2011%2032_1.png" width="450" alt="今日も一日がんばるぞい！">
+TODO: Write a gem description
 
+## Installation
 
-## Ready:
+Add this line to your application's Gemfile:
 
-* Slim
-* Sass(SASS) + Compass
-* CoffeeScript
-* LiveReload
+    gem 'middleman-ganbaruzoi'
 
+And then execute:
 
-## Require:
+    $ bundle
 
-* Ruby
-* Bundler
+Or install it yourself as:
 
+    $ gem install middleman-ganbaruzoi
 
+## Usage
 
-## Develop
+TODO: Write usage instructions here
 
-Move your working directory. And type command below.
+## Contributing
 
-    $ git clone https://github.com/ryonakae/middleman-ganbaruzoi.git
-
-    $ bundle install
-
-    $ middleman server
-
-
-## Build
-
-    $ middleman build
-
-
-## Deploy
-
-    $ middleman deploy
-
-At default, deploy branch is `gh-pages`.  
-You can change branch at `config.rb`.
-
-
-## Change Log
-
-### 2014-08-18
-
-* 名前変更
-
-### 2014-08-07
-
-* [Erichika](https://github.com/ryonakae/kke)のアップデートに合わせてCompass依存しないSASSファイルの書き方にした
-  *  `style.sass`でCompassのImportはしてるけど、依存してない
-  * Compass使ってもいいし、必須ではないみたいな感じにした
-  * Erichikaで使用している変数やmixin、グリッドシステムをそのまま持ってきた  
-* JavaScriptを`body`の一番最後に移動
-* FacebookやGoogle Analytics用のJavaScriptを追加
-* `head`内のタグを整理
-* Autoprefixerを追加
-
-### 2014-07-30
-
-* ディレクトリ構造シンプルにした
-* SASSを整理+必要最低限にした
-* グリッドシステム追加した
-* Modify README.md
-
-### 2014-06-17
-
-* Modify README.md
-
-### 2014-06-08
-
-* Modify README.md
-
-### 2014-06-02
-
-* Initial Release
-
-
-## Author
-
-[RYO NAKAE](http://brdr.jp)
+1. Fork it ( https://github.com/[my-github-username]/middleman-ganbaruzoi/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
