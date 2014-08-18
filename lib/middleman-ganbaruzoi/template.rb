@@ -10,6 +10,12 @@ module Middleman
       class_option 'js_dir',
         default: 'js',
         desc: 'The path to the javascript files'
+      class_option 'js_core_dir',
+        default: 'js/core',
+        desc: 'The path to the javascript core files'
+      class_option 'js_lib_dir',
+        default: 'js/core',
+        desc: 'The path to the javascript library files'
       class_option 'images_dir',
         default: 'img',
         desc: 'The path to the image files'
@@ -38,15 +44,15 @@ module Middleman
 
         empty_directory File.join(location, 'source', options[:js_dir])
         copy_file 'source/js/all.js.coffee', File.join(location, 'source', options[:js_dir], 'all.js.coffee')
-        empty_directory File.join(location, 'source', '#{options[:js_dir]}/core')
-        copy_file 'source/js/core/jquery-1.11.1.min.js', File.join(location, 'source', '#{options[:js_dir]}/core', 'jquery-1.11.1.min.js')
-        copy_file 'source/js/core/jquery-2.1.1.min.js', File.join(location, 'source', '#{options[:js_dir]}/core', 'jquery-2.1.1.min.js')
-        copy_file 'source/js/core/jquery.easing-1.3.min.js', File.join(location, 'source', '#{options[:js_dir]}/core', 'jquery.easing-1.3.min.js')
-        copy_file 'source/js/core/jquery.transit-0.99.min.js', File.join(location, 'source', '#{options[:js_dir]}/core', 'jquery.transit-0.99.min.js')
-        empty_directory File.join(location, 'source', '#{options[:js_dir]}/lib')
-        copy_file 'source/js/lib/cssua.min.js', File.join(location, 'source', '#{options[:js_dir]}/lib', 'cssua.min.js')
-        copy_file 'source/js/lib/modernizr.min.js', File.join(location, 'source', '#{options[:js_dir]}/lib', 'modernizr.min.js')
-        copy_file 'source/js/lib/retina.min.js', File.join(location, 'source', '#{options[:js_dir]}/lib', 'retina.min.js')
+        empty_directory File.join(location, 'source', options[:js_core_dir])
+        copy_file 'source/js/core/jquery-1.11.1.min.js', File.join(location, 'source', options[:js_core_dir], 'jquery-1.11.1.min.js')
+        copy_file 'source/js/core/jquery-2.1.1.min.js', File.join(location, 'source', options[:js_core_dir], 'jquery-2.1.1.min.js')
+        copy_file 'source/js/core/jquery.easing-1.3.min.js', File.join(location, 'source', options[:js_core_dir], 'jquery.easing-1.3.min.js')
+        copy_file 'source/js/core/jquery.transit-0.99.min.js', File.join(location, 'source', options[:js_core_dir], 'jquery.transit-0.99.min.js')
+        empty_directory File.join(location, 'source', options[:js_lib_dir])
+        copy_file 'source/js/lib/cssua.min.js', File.join(location, 'source', options[:js_lib_dir], 'cssua.min.js')
+        copy_file 'source/js/lib/modernizr.min.js', File.join(location, 'source', options[:js_lib_dir], 'modernizr.min.js')
+        copy_file 'source/js/lib/retina.min.js', File.join(location, 'source', options[:js_lib_dir], 'retina.min.js')
 
         empty_directory File.join(location, 'source', options[:images_dir])
       end

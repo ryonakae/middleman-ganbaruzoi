@@ -47,6 +47,10 @@ Web Designer in Kyoto, Japan.
 
 ## Change Log
 
+### 0.0.3 (2014-08-18)
+
+* `template.rb`の`js`ディレクトリの設定おかしかったので修正
+
 ### 0.0.2 (2014-08-18)
 
 * `README.md`修正したやつをrubygems.orgに反映してなかったので、もうよく分からんのでアップデートした
