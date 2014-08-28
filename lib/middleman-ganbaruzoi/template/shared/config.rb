@@ -34,11 +34,12 @@ end
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
+# Autoprefixer
+activate :autoprefixer, browsers: ['last 2 version', 'ie 8', 'ie 9']
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
-
-  activate :autoprefixer, browsers: ['last 2 version', 'ie 8', 'ie 9']
 end
 
 # Methods defined in the helpers block are available in templates
@@ -62,8 +63,6 @@ set :fonts_dir, 'font'
 
 # Build-specific configuration
 configure :build do
-  activate :autoprefixer, browsers: ['last 2 version', 'ie 8', 'ie 9']
-
   # For example, change the Compass output style for deployment
   activate :minify_css
 
@@ -79,7 +78,7 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-end
+
 
 # Deploy
 activate :deploy do |deploy|
