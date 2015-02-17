@@ -53,5 +53,3 @@ module Middleman
     end
   end
 end
-
-Middleman::Templates.register :ganbaruzoi, Middleman::Ganbaruzoi::Template
