@@ -80,9 +80,9 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-# Deploy
-# activate :deploy do |deploy|
-#   deploy.build_before = true
-#   deploy.method = :git
-#   deploy.branch = 'gh-pages'
-# end
+Deploy
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.method = :git
+  deploy.branch = 'gh-pages'
+end
