@@ -43,24 +43,3 @@ Web Designer in Kyoto, Japan.
 * [JAYPEG](https://jypg.net/ryo_dg)
 * [Dribbble](https://dribbble.com/ryo_dg)
 * [GitHub](https://github.com/ryonakae)
-
-
-## Change Log
-
-### 0.0.4 (2014-08-18)
-
-* `js/lib`ディレクトリの指定間違えてたので修正
-
-### 0.0.3 (2014-08-18)
-
-* `template.rb`の`js`ディレクトリの設定おかしかったので修正
-
-### 0.0.2 (2014-08-18)
-
-* `README.md`修正したやつをrubygems.orgに反映してなかったので、もうよく分からんのでアップデートした
-
-### 0.0.1 (2014-08-18)
-
-* RubyGem化(なのでバージョンは新たに0.0.1からスタート)
-* `layouts`以下のヘッダーやらのパーシャルファイルに、`_header.slim`のようにアンダースコアを先頭に追加した
-* `README.md`修正

@@ -56,10 +56,10 @@ end
 require 'slim'
 set :slim, { :pretty => true, :sort_attrs => false, :format => :html5 }
 
-set :css_dir, 'css'
-set :js_dir, 'js'
-set :images_dir, 'img'
-set :fonts_dir, 'font'
+set :css_dir, 'assets/stylesheets'
+set :js_dir, 'assets/javascripts'
+set :images_dir, 'assets/images'
+set :fonts_dir, 'assets/fonts'
 
 # Build-specific configuration
 configure :build do
@@ -81,8 +81,8 @@ configure :build do
 end
 
 # Deploy
-activate :deploy do |deploy|
-  deploy.build_before = true
-  deploy.method = :git
-  deploy.branch = 'gh-pages'
-end
+# activate :deploy do |deploy|
+#   deploy.build_before = true
+#   deploy.method = :git
+#   deploy.branch = 'gh-pages'
+# end
