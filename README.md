@@ -7,29 +7,31 @@ Middleman-Ganbaruzoi is a boilerplate of middleman using using Slim, Sass and Co
 <img src="http://f.cl.ly/items/00201Z12410h1W2N0r2j/%E5%86%99%E7%9C%9F%202014-06-07%2022%2011%2032_1.png" width="450" alt="今日も一日がんばるぞい！">
 
 
-## Ready:
+## Feature
 
-* Slim
-* Sass(SASS) + Compass
-* CoffeeScript
-* CSS Autoprefixer
-* LiveReload
-
-
-## Install
-
-	$ gem install middleman 
-	
-	$ gem install middleman-ganbaruzoi
-	
-	$ middleman init project_name --template ganbaruzoi
+* Middlemanの初期設定がだいたい済んだ感じですぐに開発を始められる
+  - ベンダープレフィックスが自動で付与される
+  - LiveReloadでファイルを保存するとブラウザが自動でリロードする
+  - GitHub Pagesへのデプロイが簡単
+* Slim + Sass(SASS) + CoffeeScriptで開発ができる
+  - Sassは[Bourbon](http://bourbon.io/) & [Neat](http://neat.bourbon.io/)の使用を前提とした構成
 
 
-## Run
+## How to Use
+### Set Up
 
-	$ cd  project_name
-	
-	$ middleman server
+    $ gem install middleman middleman-ganbaruzoi
+    $ mkdir xxxxx
+    $ cd xxxxx
+    $ middleman init . --template ganbaruzoi        
+
+### Develop
+
+    $ middleman server
+
+### Build
+
+    $ middleman build
 
 
 ## Author
