@@ -47,7 +47,7 @@ module Middleman
 
         empty_directory File.join(location, 'source', options[:css_variables_dir])
         copy_file 'source/assets/stylesheets/variables/_color.scss', File.join(location, 'source', options[:css_variables_dir], '_color.scss')
-        copy_file 'source/assets/stylesheets/variables/_common.scss', File.join(location, 'source', options[:css_variables_dir], '_common.scss')
+        copy_file 'source/assets/stylesheets/variables/_common.sass', File.join(location, 'source', options[:css_variables_dir], '_common.sass')
 
         empty_directory File.join(location, 'source', options[:js_dir])
         copy_file 'source/assets/javascripts/all.js.coffee', File.join(location, 'source', options[:js_dir], 'all.js.coffee')
